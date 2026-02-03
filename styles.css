@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  background: url('assets/hadija.jpg') no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: -1;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.6rem;
+  max-width: 90%;
+}
+
+/* CONTENT */
+.content {
+  padding: 4rem 2rem;
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 1rem;
+}
+
+.reasons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.12);
+  padding: 1rem;
+  border-radius: 14px;
+}
+
+.promise {
+  font-style: italic;
+  opacity: 0.9;
+}
+
+/* VALENTINE */
+.valentine {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+button {
+  background: #ff4d6d;
+  border: none;
+  padding: 1rem 2.2rem;
+  font-size: 1rem;
+  border-radius: 30px;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:disabled {
+  background: #ff8fa3;
+  cursor: default;
+}
+
+#answer {
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.9rem;
+}
+
+/* ANIMATIONS */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 1s ease;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* HIDDEN */
+.hidden {
+  display: none;
+}
+
+/* CONFETTI */
+.confetti {
+  position: fixed;
+  width: 8px;
+  height: 8px;
+  top: -10px;
+  animation: fall 3s linear infinite;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(110vh) rotate(360deg);
+  }
+}
